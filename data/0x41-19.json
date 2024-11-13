@@ -1,0 +1,8 @@
+{
+  "contest": 453,
+  "handle": "0x41",
+  "risk": "2",
+  "title": "FunToken creation allows overflow of ERC20 decimals, breaking Bank Coin <-> ERC20 mapping",
+  "issueId": 19,
+  "issueUrl": "https://github.com/code-423n4/2024-11-nibiru-validation/issues/19"
+}
