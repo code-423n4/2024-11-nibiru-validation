@@ -1,0 +1,8 @@
+{
+  "contest": 453,
+  "handle": "0x41",
+  "risk": "2",
+  "title": "EVM Message Value Rounding Could Lead to Failed Contract Interactions and Stuck Funds",
+  "issueId": 16,
+  "issueUrl": "https://github.com/code-423n4/2024-11-nibiru-validation/issues/16"
+}
