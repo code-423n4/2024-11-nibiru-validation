@@ -1,0 +1,8 @@
+{
+  "contest": 453,
+  "handle": "0x41",
+  "risk": "2",
+  "title": "Missing RANDAO support breaks EVM opcodes and smart contract compatibility",
+  "issueId": 17,
+  "issueUrl": "https://github.com/code-423n4/2024-11-nibiru-validation/issues/17"
+}
