@@ -1,0 +1,8 @@
+{
+  "contest": 453,
+  "handle": "Tigerfrake",
+  "risk": "2",
+  "title": "Overflow risk due to improper block number casting in `GetTransactionCount()`",
+  "issueId": 26,
+  "issueUrl": "https://github.com/code-423n4/2024-11-nibiru-validation/issues/26"
+}
