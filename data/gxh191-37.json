@@ -1,0 +1,8 @@
+{
+  "contest": 453,
+  "handle": "gxh191",
+  "risk": "2",
+  "title": "SetParams in x/evm/keeper/evm_state.go",
+  "issueId": 37,
+  "issueUrl": "https://github.com/code-423n4/2024-11-nibiru-validation/issues/37"
+}
