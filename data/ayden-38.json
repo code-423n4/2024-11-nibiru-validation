@@ -1,0 +1,8 @@
+{
+  "contest": 453,
+  "handle": "ayden",
+  "risk": "2",
+  "title": "EthAccount Function Fails to Properly Validate Ethereum Addresses",
+  "issueId": 38,
+  "issueUrl": "https://github.com/code-423n4/2024-11-nibiru-validation/issues/38"
+}
