@@ -1,0 +1,8 @@
+{
+  "contest": 453,
+  "handle": "DCENT09",
+  "risk": "3",
+  "title": "Missing replay protection could lead to Double-spending and unauthorized re-execution",
+  "issueId": 47,
+  "issueUrl": "https://github.com/code-423n4/2024-11-nibiru-validation/issues/47"
+}
