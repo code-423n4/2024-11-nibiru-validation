@@ -1,0 +1,8 @@
+{
+  "contest": 453,
+  "handle": "ifex445",
+  "risk": "2",
+  "title": "Lack of Slippage Protection in sendToBank Function",
+  "issueId": 60,
+  "issueUrl": "https://github.com/code-423n4/2024-11-nibiru-validation/issues/60"
+}
