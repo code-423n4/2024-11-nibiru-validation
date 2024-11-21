@@ -1,0 +1,8 @@
+{
+  "contest": 453,
+  "handle": "ABAIKUNANBAEV",
+  "risk": "2",
+  "title": "Tokens that use bytes32 instead of string for ERC20 symbol() would not be compatible with the system",
+  "issueId": 63,
+  "issueUrl": "https://github.com/code-423n4/2024-11-nibiru-validation/issues/63"
+}
