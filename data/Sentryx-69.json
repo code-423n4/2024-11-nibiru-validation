@@ -1,0 +1,8 @@
+{
+  "contest": 453,
+  "handle": "Sentryx",
+  "risk": "3",
+  "title": "Nonce can be manipulated by inserting a contract creation EthereumTx message first in an SDK TX with multiple EthereumTX messages",
+  "issueId": 69,
+  "issueUrl": "https://github.com/code-423n4/2024-11-nibiru-validation/issues/69"
+}
