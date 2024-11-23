@@ -1,0 +1,8 @@
+{
+  "contest": 453,
+  "handle": "Sentryx",
+  "risk": "2",
+  "title": "EVM transactions bundled in a single SDK transaction will not receive gas refunds",
+  "issueId": 70,
+  "issueUrl": "https://github.com/code-423n4/2024-11-nibiru-validation/issues/70"
+}
