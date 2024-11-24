@@ -1,0 +1,8 @@
+{
+  "contest": 453,
+  "handle": "enami_el",
+  "risk": "2",
+  "title": "Missing Validation for Exchange Rate Bounds in `precompileOracle` Smart Contract",
+  "issueId": 89,
+  "issueUrl": "https://github.com/code-423n4/2024-11-nibiru-validation/issues/89"
+}
