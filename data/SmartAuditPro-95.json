@@ -1,0 +1,8 @@
+{
+  "contest": 453,
+  "handle": "SmartAuditPro",
+  "risk": "3",
+  "title": "Improper Panic Recovery in HandleOutOfGasPanic",
+  "issueId": 95,
+  "issueUrl": "https://github.com/code-423n4/2024-11-nibiru-validation/issues/95"
+}
