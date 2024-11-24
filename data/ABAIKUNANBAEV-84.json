@@ -1,0 +1,8 @@
+{
+  "contest": 453,
+  "handle": "ABAIKUNANBAEV",
+  "risk": "3",
+  "title": "Conversion of tokens will not work correctly as there is no way to ensure that the token was born on EVM",
+  "issueId": 84,
+  "issueUrl": "https://github.com/code-423n4/2024-11-nibiru-validation/issues/84"
+}
