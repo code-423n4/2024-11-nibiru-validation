@@ -1,0 +1,8 @@
+{
+  "contest": 453,
+  "handle": "SmartAuditPro",
+  "risk": "3",
+  "title": "Lack of Replay Attack Prevention and Insecure Handling of Nonce in SetTxDefaults function",
+  "issueId": 103,
+  "issueUrl": "https://github.com/code-423n4/2024-11-nibiru-validation/issues/103"
+}
