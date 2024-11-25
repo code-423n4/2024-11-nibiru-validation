@@ -1,0 +1,8 @@
+{
+  "contest": 453,
+  "handle": "SmartAuditPro",
+  "risk": "3",
+  "title": "Missing Integer Overflow/Underflow Handling in AddBalance and SubBalance",
+  "issueId": 132,
+  "issueUrl": "https://github.com/code-423n4/2024-11-nibiru-validation/issues/132"
+}
