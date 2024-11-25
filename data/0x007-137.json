@@ -1,0 +1,8 @@
+{
+  "contest": 453,
+  "handle": "0x007",
+  "risk": "3",
+  "title": "A malicious contract can halt the chain by calling FunToken.sendToBank recursively",
+  "issueId": 137,
+  "issueUrl": "https://github.com/code-423n4/2024-11-nibiru-validation/issues/137"
+}
