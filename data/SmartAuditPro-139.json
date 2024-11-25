@@ -1,0 +1,8 @@
+{
+  "contest": 453,
+  "handle": "SmartAuditPro",
+  "risk": "2",
+  "title": "Integer Overflow in Height Calculation in functions GetProof and GetTransactionCount",
+  "issueId": 139,
+  "issueUrl": "https://github.com/code-423n4/2024-11-nibiru-validation/issues/139"
+}
