@@ -1,0 +1,8 @@
+{
+  "contest": 453,
+  "handle": "Bauchibred",
+  "risk": "2",
+  "title": "Tokens such as MKR that return `bytes32` as _name_ and _symbol_ would be broken when integrated",
+  "issueId": 165,
+  "issueUrl": "https://github.com/code-423n4/2024-11-nibiru-validation/issues/165"
+}
