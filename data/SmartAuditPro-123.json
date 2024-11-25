@@ -1,0 +1,8 @@
+{
+  "contest": 453,
+  "handle": "SmartAuditPro",
+  "risk": "3",
+  "title": "Missing Validation in parseArgsWasmInstantiate",
+  "issueId": 123,
+  "issueUrl": "https://github.com/code-423n4/2024-11-nibiru-validation/issues/123"
+}
