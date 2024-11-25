@@ -1,0 +1,8 @@
+{
+  "contest": 453,
+  "handle": "iczc",
+  "risk": "3",
+  "title": "RPC Cannot Return Custom Error Revert Data",
+  "issueId": 173,
+  "issueUrl": "https://github.com/code-423n4/2024-11-nibiru-validation/issues/173"
+}
