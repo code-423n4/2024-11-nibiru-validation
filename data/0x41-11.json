@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "Irreversible state changes due to missing rollback mechanism in coin-to-EVM conversion leading to permanent fund loss",
   "issueId": 11,
-  "issueUrl": "https://github.com/code-423n4/2024-11-nibiru-validation/issues/11"
+  "issueUrl": "https://github.com/code-423n4/2024-11-nibiru-validation/issues/11",
+  "validatedIssueId": 56,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-11-nibiru-findings/issues/56"
 }
