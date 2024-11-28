@@ -1,0 +1,172 @@
+issue,title,primary finding,validator comment,status,root cause (URL),size,robotLabel
+validation-117,Potentially sensitive issue - disclosed privately again,validation-117,,Satisfactory,,8,:robot:_primary
+validation-6,Potential Error wrapping with errors.Wrapf,,,Unsatisfactory,,8,:robot:_primary
+validation-5,"Weak permissions and potential for permission escalation in ""ModuleAccPerms""",,,Unsatisfactory,,8,:robot:_primary
+validation-60,Lack of Slippage Protection in sendToBank Function,,no evidence that there is any slippage,Unsatisfactory,,15,:robot:_00_group
+validation-59,Incompatibility in sendToBank Function with Tokens Lacking Transfer Response,validation-13,,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/84054a4f00fdfefaa8e5849c53eb66851a762319/x/evm/keeper/erc20.go#L91,16,:robot:_00_group
+validation-58,Race Condition in AddToBlockGasUsed Function Leading to Potential Inconsistent Gas Tracking,validation-58,,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/8ed91a036f664b421182e183f19f6cef1a4e28ea/x/evm/keeper/msg_server.go#L31,20,:robot:_primary
+validation-49,Potentially sensitive issue - disclosed privately,validation-49,,Satisfactory,,22,:robot:_primary
+validation-134,remote Denial of Service issue in nibid,validation-134,,Satisfactory,,24,:robot:_primary
+validation-71,Nibiru is incompatible with rebasing ERC20 tokens,validation-169,,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/8ed91a036f664b421182e183f19f6cef1a4e28ea/x/evm/keeper/msg_server.go#L567-L624,24,:robot:_02_group
+validation-127,There's no TxHash and Logs for CallContracts,validation-127,overinflated severity,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/main/x/evm/keeper/call_contract.go#L105,27,:robot:_primary
+validation-158,Users can halt chain by spam-creating FunTokens and minting bank coins for a huge amount of spam addresses,validation-158,,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/8ed91a036f664b421182e183f19f6cef1a4e28ea/x/evm/keeper/msg_server.go#L424-L465,28,:robot:_primary
+validation-177,Gas Limit Aggregation Error,,,Unsatisfactory,,31,:robot:_24_group
+validation-149,Lack of Validation for leftoverGas in RefundGas,,,Unsatisfactory,,31,:robot:_primary
+validation-88,Nibiru EVM is not compliant with Cancun fork,validation-88,,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/main/x/evm/statedb/statedb.go#L395-L409,31,:robot:_primary
+validation-195,Missing Reentrancy Protection in CallContractWithInput function,,,Unsatisfactory,,32,:robot:_primary
+validation-182,Infinite Gas Meter Misuse,,,Unsatisfactory,,32,:robot:_26_group
+validation-150,Missing Checks in DeductTxCostsFromUserBalance,,,Unsatisfactory,,32,:robot:_primary
+validation-197,Lack of Validation for erc20 Input in SafeInsert,,,Unsatisfactory,,33,:robot:_07_group
+validation-154,FeeHistory Block Calculation Logic,,,Unsatisfactory,,33,:robot:_primary
+validation-110,Gas Usage Handling in Run Function,,,Unsatisfactory,,33,:robot:_26_group
+validation-109,Missing Access Control on instantiate,,,Unsatisfactory,,33,:robot:_primary
+validation-100,Unsafe Integer Conversion in GetTransactionLogs,,,Unsatisfactory,,33,:robot:_primary
+validation-56,StateDB Persistence in Read-Only Operations within Bank Module State Can Lead to Consensus Failures,validation-56,,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/8ed91a036f664b421182e183f19f6cef1a4e28ea/x/evm/keeper/msg_server.go#L262,33,:robot:_primary
+validation-181,Unchecked User Input for Gas Limits,,,Unsatisfactory,,34,:robot:_primary
+validation-143,Inefficient Use of big.Int for Balance Comparison in SetAccBalance,,,Unsatisfactory,,34,:robot:_primary
+validation-47,Missing replay protection could lead to Double-spending and unauthorized re-execution,validation-47,,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/8ed91a036f664b421182e183f19f6cef1a4e28ea/app/ante/auth_grard_test.go#L75-L86,34,:robot:_04_group
+validation-179,Unchecked Return Value for SafeInsert in createFunTokenFromERC20,,,Unsatisfactory,,35,:robot:_07_group
+validation-73,Potential Integer Overflow/Underflow in SetAccBalance function,,,Unsatisfactory,,35,:robot:_20_group
+validation-35,Access Control Vulnerability in `updateBlockBloom` Function,validation-35,,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/main/x/evm/keeper/msg_server.go#L709,35,:robot:_primary
+validation-194,No Check for Nonce Exhaustion in deployERC20ForBankCoin,,,Unsatisfactory,,36,:robot:_primary
+validation-191,Lack of Validation for idx in Contains,,,Unsatisfactory,,36,:robot:_primary
+validation-101,Missing Bounds Checks in FeeHistory,,,Unsatisfactory,,36,:robot:_58_group
+validation-99,Lack of Input Validation for GetTransactionByHash,,,Unsatisfactory,,36,:robot:_primary
+validation-98,Inefficient Transaction Search in GetTransactionByHash and getTransactionByHashPending methods,,,Unsatisfactory,,36,:robot:_primary
+validation-184,Function BaseFeeWeiPerGas: Invalid Context Instantiation,,,Unsatisfactory,,37,:robot:_primary
+validation-180,Metadata Overlap in ToBankMetadata,,,Unsatisfactory,,37,:robot:_primary
+validation-178,Missing Replay Protection,,,Unsatisfactory,,37,:robot:_primary
+validation-151,Lack of Gas Meter Rollback in ResetGasMeterAndConsumeGas,,,Unsatisfactory,,37,:robot:_26_group
+validation-116,Potential Index Out of Range in retrieveEVMTxFeesFromBlock,,,Unsatisfactory,,37,:robot:_primary
+validation-57,Missing EIP-6780 Implementation in Nibiru's StateDB Enables SELFDESTRUCT Attack Vectors,validation-57,,Satisfactory,https://github.com/NibiruChain/nibiru/blob/b61c103c3c09da844972b5cc36884da403376363/x/evm/statedb/statedb.go#L395,37,:robot:_14_group
+validation-196,Absence of Rate-Limiting or Validation in RPCFilterCap,,,Unsatisfactory,,38,:robot:_primary
+validation-111, Lack of Input Validation in queryRaw,,,Unsatisfactory,,38,:robot:_primary
+validation-106,Potential Memory Exhaustion in Gas Estimation,,,Unsatisfactory,,38,:robot:_primary
+validation-198,Missing Handling for Duplicate Insertions,,,Unsatisfactory,,39,:robot:_primary
+validation-186,Gas Limit Mismanagement,,,Unsatisfactory,,39,:robot:_primary
+validation-148,Incorrect Handling of Zero refundQuotient in GasToRefund,,,Unsatisfactory,,39,:robot:_primary
+validation-140,Invalid Balance Parsing GetBalance and GetProof,,,Unsatisfactory,,39,:robot:_primary
+validation-112,"Missing Validation of Contract Addresses in execute, executeMulti, instantiate, and query function",,,Unsatisfactory,,39,:robot:_primary
+validation-107,Insufficient Validation of hexutil.Bytes Input,,,Unsatisfactory,,39,:robot:_primary
+validation-87,FunToken is not compatible with tokens that change balance outside of transfers,validation-169,,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/8ed91a036f664b421182e183f19f6cef1a4e28ea/x/evm/keeper/msg_server.go#L567-L624,39,:robot:_primary
+validation-120,Unnecessary Access to NetworkClient,,,Unsatisfactory,,40,:robot:_primary
+validation-48,Overly broad generic grants could cause privilege escalation and misuse of staking or governance actions,validation-48,,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/8ed91a036f664b421182e183f19f6cef1a4e28ea/app/ante/auth_grard_test.go#L39-L49,40,:robot:_primary
+validation-190, Inconsistent Index Management in DeleteSlot,,,Unsatisfactory,,41,:robot:_primary
+validation-183,Function AddToBlockGasUsed: Integer Overflow,,,Unsatisfactory,,41,:robot:_primary
+validation-176,Missing Checks for Negative Coin Balances,,,Unsatisfactory,,41,:robot:_primary
+validation-141,Inefficient Storage Proof Handling in GetProof,,,Unsatisfactory,,41,:robot:_primary
+validation-129, Missing Error Handling in Revert function,,,Unsatisfactory,,41,:robot:_08_group
+validation-114,Potential Out-of-Bounds Error in TxLogsFromEvents,,,Unsatisfactory,,41,:robot:_primary
+validation-97,Improper Error Handling in GetTransactionByHash,,,Unsatisfactory,,41,:robot:_33_group
+validation-188,Nil Pointer Dereference on baseFeeWeiPerGas,,,Unsatisfactory,,42,:robot:_primary
+validation-159,Arbitrary minting of tokens,validation-159,,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/8ed91a036f664b421182e183f19f6cef1a4e28ea/x/evm/keeper/erc20.go#L59,42,:robot:_21_group
+validation-157, Gas Cost Calculation Vulnerability in requiredGas,,,Unsatisfactory,,42,:robot:_primary
+validation-156,Missing Input Validation methodById and decomposeInput,,,Unsatisfactory,,42,:robot:_primary
+validation-144,Potential for nil Dereference in GetAccount,,,Unsatisfactory,,42,:robot:_primary
+validation-115,Lack of Gas Limit Validation in retrieveEVMTxFeesFromBlock,,,Unsatisfactory,,42,:robot:_primary
+validation-102,"Lack of Authorization for Critical Methods in function SendRawTransaction, GetTransactionByHash, and GetTransactionReceipt",,,Unsatisfactory,,42,:robot:_primary
+validation-90,Block Number Validation Bug,,,Unsatisfactory,,42,:robot:_49_group
+validation-72,Improper Handling of Panics in GetCode,,,Unsatisfactory,,42,:robot:_22_group
+validation-185,Panic Handling During Out of Gas,,,Unsatisfactory,,43,:robot:_primary
+validation-43,Potential Negative Value Transfer Vulnerability,,insufficient proof,Unsatisfactory,,43,:robot:_primary
+validation-187,Unbounded Gas Consumption,,,Unsatisfactory,,44,:robot:_09_group
+validation-142,Panic on Error in GetCode function,,,Unsatisfactory,,44,:robot:_primary
+validation-130,Inconsistent Snapshot Handling in Revert Function,,,Unsatisfactory,,44,:robot:_primary
+validation-119, Missing Input Validation for Trace Call,,,Unsatisfactory,,44,:robot:_primary
+validation-189,Potential Integer Overflows in TxConfig,,,Unsatisfactory,,45,:robot:_primary
+validation-126,Inconsistent State Management: EthereumTx StateDB Overriding CallContract Results,validation-126,,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/main/x/evm/statedb/statedb.go#L515-L586,45,:robot:_primary
+validation-103,Lack of Replay Attack Prevention and Insecure Handling of Nonce in SetTxDefaults function,,,Unsatisfactory,,45,:robot:_04_group
+validation-46,Inadequate validation for EVM messages could lead to unauthorized EVM execution and potential DoS,validation-46,,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/8ed91a036f664b421182e183f19f6cef1a4e28ea/app/ante/auth_grard_test.go#L25-L37,45,:robot:_primary
+validation-108,Insufficient Granularity in Multi-Execution Error Handling in executeMulti function,,,Unsatisfactory,,46,:robot:_primary
+validation-91,Inefficient Error Handling in Transaction Decoding in function EthMsgsFromTendermintBlock,,,Unsatisfactory,,46,:robot:_primary
+validation-175,Missing Input Validation for Coin Denomination,,,Unsatisfactory,,47,:robot:_primary
+validation-14,Potential Chain Split Due to CometBFT State Sync Vulnerability (ASA-2024-009),,OOS,Unsatisfactory,,47,:robot:_primary
+validation-92,Lack of Gas Limit Validation in RPCBlockFromTendermintBlock function,,,Unsatisfactory,,48,:robot:_13_group
+validation-147,No Validation of CreateFuntokenFee in SetParams,,,Unsatisfactory,,49,:robot:_primary
+validation-161,Multiple FunTokens can be created for a single ERC20 address,validation-161,,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/main/x/evm/keeper/funtoken_from_erc20.go#L108-L154,50,:robot:_11_group
+validation-139,Integer Overflow in Height Calculation in functions GetProof and GetTransactionCount,,,Unsatisfactory,,50,:robot:_06_group
+validation-113,Unchecked Type Assertions in Multiple Functions like retrieveEVMTxFeesFromBlock and AllTxLogsFromEvents,,,Unsatisfactory,,50,:robot:_primary
+validation-36,The SetParams Function in x/evm/keeper/evm_state.go Does Not Check If CreateFuntokenFee is Zero,,,Unsatisfactory,,50,:robot:_01_group
+validation-135,Missing Access Control for Sensitive Functions like Mint,validation-159,,Unsatisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/8ed91a036f664b421182e183f19f6cef1a4e28ea/x/evm/keeper/erc20.go#L59,51,:robot:_primary
+validation-125,"Gas is not consumed when precompile method fail, allowing resource consumption related DOS",validation-125,,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/main/x/evm/precompile/funtoken.go#L79-L84,51,:robot:_primary
+validation-37,SetParams in x/evm/keeper/evm_state.go,,,Unsatisfactory,,52,:robot:_01_group
+validation-137,A malicious contract can halt the chain by calling FunToken.sendToBank recursively,validation-137,,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/main/x/evm/keeper/call_contract.go#L83-L115,53,:robot:_15_group
+validation-118,Potential Integer Overflow in Transaction Index Handling in TraceTransaction and TraceBlock,,,Unsatisfactory,,53,:robot:_06_group
+validation-121,Insufficient Type Validation for Input Arguments for parseFundsArg and parseArgContractAddr functions,,,Unsatisfactory,,55,:robot:_28_group
+validation-146,Potential Security Risk with SetAccState (Inconsistent State Deletion),,,Unsatisfactory,,56,:robot:_primary
+validation-133,Improper Handling of Code Hash & Code Modifications in SetCode,,,Unsatisfactory,,56,:robot:_primary
+validation-128,Missing Synchronization in Concurrent Environments,,,Unsatisfactory,,56,:robot:_primary
+validation-153,PendingTransactions Missing Check for TxDecoder,,,Unsatisfactory,,57,:robot:_primary
+validation-96,Integer Overflow Risk (G701),,,Unsatisfactory,,58,:robot:_06_group
+validation-41,GetEthIntrinsicGas Function Should Read Homestead and Istanbul Flags from Config Instead of Using Fixed true Values,,Nibiru EVM fork is at least Paris,Unsatisfactory,,59,:robot:_primary
+validation-76,Improper Cleanup in DeleteAccount,,,Unsatisfactory,,60,:robot:_23_group
+validation-136,Insufficient Error Handling in Transfer,,,Unsatisfactory,,61,:robot:_primary
+validation-174,Repetitive StateDB Synchronization Logic,,,Unsatisfactory,,63,:robot:_primary
+validation-155,Bank module supply invariant can be triggered if a contract owning FunToken bank coins is self-destructed,validation-155,,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/8ed91a036f664b421182e183f19f6cef1a4e28ea/x/evm/keeper/statedb.go#L159-L185,64,:robot:_82_group
+validation-19,"FunToken creation allows overflow of ERC20 decimals, breaking Bank Coin <-> ERC20 mapping",validation-19,,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/84054a4f00fdfefaa8e5849c53eb66851a762319/x/evm/keeper/funtoken_from_coin.go#L70,65,:robot:_11_group
+validation-94,Input Validation Issues in sendToBank function,,,Unsatisfactory,,66,:robot:_primary
+validation-74,Infinite Loop Risk and Incorrect Iteration Terminationin ForEachStorage,,,Unsatisfactory,,66,:robot:_primary
+validation-16,EVM Message Value Rounding Could Lead to Failed Contract Interactions and Stuck Funds,validation-16,,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/84054a4f00fdfefaa8e5849c53eb66851a762319/x/evm/keeper/msg_server.go#L337,67,:robot:_05_group
+validation-8,The Iteration Over the Map in x/evm/keeper/precompiles.go is Non-Deterministic,validation-8,,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/main/x/evm/keeper/precompiles.go#L19,67,:robot:_19_group
+validation-122,Lack of Safe Parsing for Multi-Execution Arguments in parseArgsWasmExecuteMulti function,,,Unsatisfactory,,68,:robot:_40_group
+validation-193, Lower decimal tokens would be non-transferrable,,hallucinated,Unsatisfactory,,69,:robot:_primary
+validation-145,Potential Unchecked Error in GetContractBytecode and GetState,,,Unsatisfactory,,69,:robot:_primary
+validation-89,Missing Validation for Exchange Rate Bounds in `precompileOracle` Smart Contract,,insufficient proof,Unsatisfactory,,70,:robot:_primary
+validation-17,Missing RANDAO support breaks EVM opcodes and smart contract compatibility,validation-17,,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/84054a4f00fdfefaa8e5849c53eb66851a762319/x/evm/keeper/msg_server.go#L136,71,:robot:_primary
+validation-167,Nibiru lacks support for TSTORE,,,Unsatisfactory,,73,:robot:_primary
+validation-40,Missing Contract Type Check in DeleteAccount Function,validation-40,,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/main/x/evm/keeper/statedb.go#L159-L185,74,:robot:_primary
+validation-132,Missing Integer Overflow/Underflow Handling in AddBalance and SubBalance,,,Unsatisfactory,,75,:robot:_primary
+validation-24,Inconsistent Fee Denomination Handling in Transaction Validation and Building,validation-24,,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/84054a4f00fdfefaa8e5849c53eb66851a762319/app/evmante/evmante_validate_basic.go#L128,75,:robot:_31_group
+validation-21,State DB contract code status inconsistency allows contract addresses to bypass EOA-only transaction restrictions,validation-21,,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/84054a4f00fdfefaa8e5849c53eb66851a762319/x/evm/keeper/msg_server.go#L324,75,:robot:_primary
+validation-131,Gas Inefficiency and Redundant Operations in sortedDirties,,,Unsatisfactory,,77,:robot:_primary
+validation-95,Improper Panic Recovery in HandleOutOfGasPanic,,,Unsatisfactory,,80,:robot:_18_group
+validation-160,Malicious users will transfer funds directly to module accounts causing potential chain halt,validation-160,,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/main/x/evm/keeper/bank_extension.go#L63,81,:robot:_primary
+findings-6,Transaction value inconsistency between execution and block data due to value truncation might lead to incorrect data query,findings-6,,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/main/x/evm/keeper/msg_server.go#L314,82,
+validation-55,StateOverride Parameter Silently Ignored in eth_call Implementation Leading to Incorrect Smart Contract Simulation Results,validation-55,,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/8ed91a036f664b421182e183f19f6cef1a4e28ea/eth/rpc/rpcapi/eth_api.go#L279,83,:robot:_primary
+validation-104,Absence of Replay Protection for Legacy Transactions,,,Unsatisfactory,,84,:robot:_04_group
+validation-86,erc20Calls.Transfer is not compatible with missing return value tokens,validation-13,,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/84054a4f00fdfefaa8e5849c53eb66851a762319/x/evm/keeper/erc20.go#L91,84,:robot:_10_group
+validation-22,Gas used mismatch in failed contract calls can lead to wrong gas deductions,validation-22,,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/main/x/evm/keeper/call_contract.go#L118,85,:robot:_primary
+validation-123,Missing Validation in parseArgsWasmInstantiate,,,Unsatisfactory,,86,:robot:_primary
+validation-52,Avoid Using panic in Code Queries,,insufficient proof,Unsatisfactory,,87,:robot:_22_group
+validation-18,EVM Transfer Validation Fails to Check Combined Value Across Multiple Messages from Same Sender,validation-18,,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/84054a4f00fdfefaa8e5849c53eb66851a762319/app/evmante/evmante_can_transfer.go#L84,88,:robot:_03_group
+validation-93," Pruning Configurations Leading to Missing Data in Functions like RPCBlockFromTendermintBlock, EthBlockFromTendermintBlock",,,Unsatisfactory,,89,:robot:_primary
+validation-23,"Gas refunds use block gas instead of transaction gas, leading to incorrect refund amounts",validation-23,,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/84054a4f00fdfefaa8e5849c53eb66851a762319/app/evmante/evmante_gas_consume.go#L100-L105,89,:robot:_12_group
+validation-25,"Gas Overflow Issue in requiredGas Function in x/evm/precompile/precompile.go, Leading to Gas Being Set to 0",,insufficient proof,Unsatisfactory,,90,:robot:_16_group
+validation-20,Double fee application breaks supply invariant for fee-on-transfer ERC20s,validation-20,,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/84054a4f00fdfefaa8e5849c53eb66851a762319/x/evm/precompile/funtoken.go#L162-L170,92,:robot:_02_group
+validation-29,Missing Validity Check for wasmContract in the execute Function of x/evm/precompile/wasm.go,,impact unclear,Unsatisfactory,,93,:robot:_44_group
+validation-13,ERC20 Transfer Fails With Non-Compliant Tokens Missing Return Values,validation-13,,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/84054a4f00fdfefaa8e5849c53eb66851a762319/x/evm/keeper/erc20.go#L91,94,:robot:_10_group
+validation-170,Tokens that are upgradeable would be linked to multiple bank denoms,validation-170,,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/8ed91a036f664b421182e183f19f6cef1a4e28ea/x/evm/keeper/funtoken_from_erc20.go#L108-L154,96,:robot:_primary
+validation-69,Nonce can be manipulated by inserting a contract creation EthereumTx message first in an SDK TX with multiple EthereumTX messages,validation-69,,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/main/x/evm/keeper/msg_server.go#L330,98,:robot:_117_group
+validation-70,EVM transactions bundled in a single SDK transaction will not receive gas refunds,validation-23,,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/84054a4f00fdfefaa8e5849c53eb66851a762319/app/evmante/evmante_gas_consume.go#L100-L105,100,:robot:_12_group
+validation-168,One could still provide gas for tx lower than base fee,,,Unsatisfactory,,101,:robot:_primary
+validation-28,Missing Validity Check for Parameters in the balance Function in x/evm/precompile/funtoken.go,,impact unclear,Unsatisfactory,,101,:robot:_primary
+validation-54,Non-Deterministic Iteration in ForEachStorage,validation-54,,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/main/x/evm/statedb/statedb.go#L324,102,:robot:_primary
+findings-2,IOracle.queryExchangeRate returns incorrect blockTimeMs,findings-2,,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/8ed91a036f664b421182e183f19f6cef1a4e28ea/x/evm/precompile/oracle.go#L92,102,:robot:_primary
+validation-12,Invalid Asset Pair Parsing Due to Colon Delimiter Conflict,validation-12,,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/84054a4f00fdfefaa8e5849c53eb66851a762319/x/evm/precompile/oracle.go#L87,105,:robot:_primary
+validation-9,DOS or OOM Due to Unrestricted String Length in x/evm/precompile/wasm.go,validation-9,,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/main/x/evm/precompile/wasm.go#L68,106,:robot:_primary
+validation-51,RPC DOS via TraceTx,validation-51,,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/main/x/evm/keeper/grpc_query.go#L547,107,:robot:_primary
+validation-15,RPC implementation Deviates from Ethereum JSON-RPC Spec,validation-15,QA,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/main/eth/rpc/backend/account_info.go#L170,107,:robot:_primary
+validation-105,Failure to Validate Gas Cap Configuration,,,Unsatisfactory,,109,:robot:_13_group
+findings-5,The `bankBalance` function failed to handle errors correctly.,findings-5,,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/8ed91a036f664b421182e183f19f6cef1a4e28ea/x/evm/precompile/funtoken.go#L378,113,:robot:_primary
+validation-10,Non-deterministic gas consumption due to shared StateDB pointer in bank keeper affecting consensus,validation-10,,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/84054a4f00fdfefaa8e5849c53eb66851a762319/x/evm/keeper/bank_extension.go#L84-L86,116,:robot:_17_group
+findings-7,Nibiru-specific precompiled contracts are not added to access list,findings-7,QA,Satisfactory,,118,
+validation-164,Missing Coin validation in fee handling would lead to broken accounting for fees,,insufficient proof,Unsatisfactory,,119,:robot:_primary
+findings-4,Hardcoded gas used in ERC20 queries allows for block production halt from infinite recursion,findings-4,,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/8ed91a036f664b421182e183f19f6cef1a4e28ea/x/evm/precompile/funtoken.go#L149,119,:robot:_primary
+validation-75,Unchecked Input in SetState,,,Unsatisfactory,,122,:robot:_primary
+validation-11,Irreversible state changes due to missing rollback mechanism in coin-to-EVM conversion leading to permanent fund loss,validation-11,,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/84054a4f00fdfefaa8e5849c53eb66851a762319/x/evm/keeper/msg_server.go#L594,125,:robot:_02_group
+validation-169,Nibiru's bank coin to EVM balance tracking logic is completely broken for rebasing tokens and would lead to leakage/loss of funds when converting,validation-169,,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/8ed91a036f664b421182e183f19f6cef1a4e28ea/x/evm/keeper/msg_server.go#L567-L624,136,:robot:_primary
+validation-138,Lack of Reentrancy Protection in Mint and Transfer function,,,Unsatisfactory,,136,:robot:_39_group
+validation-166,USDT and similar tokens that do not return boolean values would not work,validation-13,,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/84054a4f00fdfefaa8e5849c53eb66851a762319/x/evm/keeper/erc20.go#L91,138,:robot:_primary
+validation-173,RPC Inability to Return Custom Errors,validation-173,,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/main/x/evm/errors.go#L56,139,:robot:_primary
+validation-165,Tokens such as MKR that return `bytes32` as _name_ and _symbol_ would be broken when integrated,validation-165,QA,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/8ed91a036f664b421182e183f19f6cef1a4e28ea/x/evm/keeper/funtoken_from_erc20.go#L26-L52,139,:robot:_primary
+validation-124,Unlimited Nibi could be minted because evm and bank balance are not synced when staking,validation-124,,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/main/x/evm/keeper/statedb.go#L72-L103,148,:robot:_primary
+validation-172,USDT Transfer Issue (and similar tokens),validation-13,,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/84054a4f00fdfefaa8e5849c53eb66851a762319/x/evm/keeper/erc20.go#L91,154,:robot:_primary
+validation-39,Incorrect Handling of weiInt in the ParseWeiAsMultipleOfMicronibi Function in x/evm/keeper/msg_server.go,validation-39,,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/main/x/evm/keeper/msg_server.go#L402,178,:robot:_05_group
+validation-2,Vesting Account Preemption Attack Preventing Future Contract Deployment,validation-2,,Satisfactory,https://github.com/NibiruChain/nibiru/blob/f3cbcaec58f23c54f6b75204b0c4009856b47250/x/evm/keeper/statedb.go#L130-L134,179,
+validation-163,Adversary can drain the token holders due to missing signature validation,validation-163,,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/8ed91a036f664b421182e183f19f6cef1a4e28ea/x/evm/keeper/erc20.go#L76-L121,181,:robot:_primary
+validation-30,Missing Validity Check for the admin Parameter in the instantiate Function of x/evm/precompile/wasm.go,validation-30,overinflated severity,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/main/x/evm/precompile/wasm.go#L237,183,:robot:_primary
+validation-44,The ApplyEvmMsg Function in x/evm/keeper/msg_server.go Allows Transfers with Negative Values,validation-44,,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/main/x/evm/keeper/msg_server.go#L249,190,:robot:_primary
+validation-171,Internal Transactions Bypass EIP-3529 Gas Refund Cap,validation-171,,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/8ed91a036f664b421182e183f19f6cef1a4e28ea/x/evm/keeper/msg_server.go#L208-L399,211,:robot:_primary
+validation-61,"Fee-on-Transfer Tokens Incur Unexpected Double Fees During Round-Trip Conversions, Leading to Significant User Fund Loss",validation-20,,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/84054a4f00fdfefaa8e5849c53eb66851a762319/x/evm/precompile/funtoken.go#L162-L170,329,:robot:_02_group
+validation-199,Potentially sensitive issue - disclosed privately,validation-199,,Satisfactory,,0,
+validation-200,Potentially sensitive issue - disclosed privately,validation-200,,Satisfactory,,0,
