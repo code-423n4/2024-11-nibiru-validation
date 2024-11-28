@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "Inadequate validation for EVM messages could lead to unauthorized EVM execution and potential DoS",
   "issueId": 46,
-  "issueUrl": "https://github.com/code-423n4/2024-11-nibiru-validation/issues/46"
+  "issueUrl": "https://github.com/code-423n4/2024-11-nibiru-validation/issues/46",
+  "validatedIssueId": 38,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-11-nibiru-findings/issues/38"
 }
