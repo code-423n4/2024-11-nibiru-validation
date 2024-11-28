@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "Incorrect Handling of weiInt in the ParseWeiAsMultipleOfMicronibi Function in x/evm/keeper/msg_server.go",
   "issueId": 39,
-  "issueUrl": "https://github.com/code-423n4/2024-11-nibiru-validation/issues/39"
+  "issueUrl": "https://github.com/code-423n4/2024-11-nibiru-validation/issues/39",
+  "validatedIssueId": 41,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-11-nibiru-findings/issues/41"
 }
