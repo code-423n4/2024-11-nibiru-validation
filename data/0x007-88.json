@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "Nibiru EVM is not compliant with Cancun fork",
   "issueId": 88,
-  "issueUrl": "https://github.com/code-423n4/2024-11-nibiru-validation/issues/88"
+  "issueUrl": "https://github.com/code-423n4/2024-11-nibiru-validation/issues/88",
+  "validatedIssueId": 28,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-11-nibiru-findings/issues/28"
 }
