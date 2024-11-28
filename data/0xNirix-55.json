@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "StateOverride Parameter Silently Ignored in eth_call Implementation Leading to Incorrect Smart Contract Simulation Results",
   "issueId": 55,
-  "issueUrl": "https://github.com/code-423n4/2024-11-nibiru-validation/issues/55"
+  "issueUrl": "https://github.com/code-423n4/2024-11-nibiru-validation/issues/55",
+  "validatedIssueId": 33,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-11-nibiru-findings/issues/33"
 }
