@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "Inconsistent State Management: EthereumTx StateDB Overriding CallContract Results",
   "issueId": 126,
-  "issueUrl": "https://github.com/code-423n4/2024-11-nibiru-validation/issues/126"
+  "issueUrl": "https://github.com/code-423n4/2024-11-nibiru-validation/issues/126",
+  "validatedIssueId": 24,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-11-nibiru-findings/issues/24"
 }
