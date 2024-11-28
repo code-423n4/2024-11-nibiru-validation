@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "Gas is not consumed when precompile method fail, allowing resource consumption related DOS",
   "issueId": 125,
-  "issueUrl": "https://github.com/code-423n4/2024-11-nibiru-validation/issues/125"
+  "issueUrl": "https://github.com/code-423n4/2024-11-nibiru-validation/issues/125",
+  "validatedIssueId": 25,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-11-nibiru-findings/issues/25"
 }
