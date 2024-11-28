@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "Gas refunds use block gas instead of transaction gas, leading to incorrect refund amounts",
   "issueId": 23,
-  "issueUrl": "https://github.com/code-423n4/2024-11-nibiru-validation/issues/23"
+  "issueUrl": "https://github.com/code-423n4/2024-11-nibiru-validation/issues/23",
+  "validatedIssueId": 45,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-11-nibiru-findings/issues/45"
 }
