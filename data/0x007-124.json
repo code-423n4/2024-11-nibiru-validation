@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "Unlimited Nibi could be minted because evm and bank balance are not synced when staking",
   "issueId": 124,
-  "issueUrl": "https://github.com/code-423n4/2024-11-nibiru-validation/issues/124"
+  "issueUrl": "https://github.com/code-423n4/2024-11-nibiru-validation/issues/124",
+  "validatedIssueId": 26,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-11-nibiru-findings/issues/26"
 }
