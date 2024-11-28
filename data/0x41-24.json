@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "Inconsistent Fee Denomination Handling in Transaction Validation and Building",
   "issueId": 24,
-  "issueUrl": "https://github.com/code-423n4/2024-11-nibiru-validation/issues/24"
+  "issueUrl": "https://github.com/code-423n4/2024-11-nibiru-validation/issues/24",
+  "validatedIssueId": 44,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-11-nibiru-findings/issues/44"
 }
