@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "RPC DOS via TraceTx",
   "issueId": 51,
-  "issueUrl": "https://github.com/code-423n4/2024-11-nibiru-validation/issues/51"
+  "issueUrl": "https://github.com/code-423n4/2024-11-nibiru-validation/issues/51",
+  "validatedIssueId": 35,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-11-nibiru-findings/issues/35"
 }
