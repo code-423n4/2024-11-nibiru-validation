@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "The iteration over the Map in x/evm/keeper/precompiles.go is non-deterministic.",
   "issueId": 8,
-  "issueUrl": "https://github.com/code-423n4/2024-11-nibiru-validation/issues/8"
+  "issueUrl": "https://github.com/code-423n4/2024-11-nibiru-validation/issues/8",
+  "validatedIssueId": 59,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-11-nibiru-findings/issues/59"
 }
