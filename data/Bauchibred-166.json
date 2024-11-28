@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "USDT and similar tokens that do not return boolean values would not work",
   "issueId": 166,
-  "issueUrl": "https://github.com/code-423n4/2024-11-nibiru-validation/issues/166"
+  "issueUrl": "https://github.com/code-423n4/2024-11-nibiru-validation/issues/166",
+  "validatedIssueId": 62,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-11-nibiru-findings/issues/62"
 }
