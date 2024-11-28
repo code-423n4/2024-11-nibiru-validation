@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "Non-Deterministic Iteration in ForEachStorage",
   "issueId": 54,
-  "issueUrl": "https://github.com/code-423n4/2024-11-nibiru-validation/issues/54"
+  "issueUrl": "https://github.com/code-423n4/2024-11-nibiru-validation/issues/54",
+  "validatedIssueId": 34,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-11-nibiru-findings/issues/34"
 }
