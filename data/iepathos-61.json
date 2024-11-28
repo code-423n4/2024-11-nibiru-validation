@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "Fee-on-Transfer Tokens Incur Unexpected Double Fees During Round-Trip Conversions, Leading to Significant User Fund Loss",
   "issueId": 61,
-  "issueUrl": "https://github.com/code-423n4/2024-11-nibiru-validation/issues/61"
+  "issueUrl": "https://github.com/code-423n4/2024-11-nibiru-validation/issues/61",
+  "validatedIssueId": 67,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-11-nibiru-findings/issues/67"
 }
