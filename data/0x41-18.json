@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "EVM Transfer Validation Fails to Check Combined Value Across Multiple Messages from Same Sender",
   "issueId": 18,
-  "issueUrl": "https://github.com/code-423n4/2024-11-nibiru-validation/issues/18"
+  "issueUrl": "https://github.com/code-423n4/2024-11-nibiru-validation/issues/18",
+  "validatedIssueId": 50,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-11-nibiru-findings/issues/50"
 }
