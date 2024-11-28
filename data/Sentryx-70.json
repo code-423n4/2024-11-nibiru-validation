@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "EVM transactions bundled in a single SDK transaction will not receive gas refunds",
   "issueId": 70,
-  "issueUrl": "https://github.com/code-423n4/2024-11-nibiru-validation/issues/70"
+  "issueUrl": "https://github.com/code-423n4/2024-11-nibiru-validation/issues/70",
+  "validatedIssueId": 66,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-11-nibiru-findings/issues/66"
 }
