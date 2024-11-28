@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "Missing EIP-6780 Implementation in Nibiru's StateDB Enables SELFDESTRUCT Attack Vectors",
   "issueId": 57,
-  "issueUrl": "https://github.com/code-423n4/2024-11-nibiru-validation/issues/57"
+  "issueUrl": "https://github.com/code-423n4/2024-11-nibiru-validation/issues/57",
+  "validatedIssueId": 31,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-11-nibiru-findings/issues/31"
 }
