@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "There's no TxHash and Logs for CallContracts",
   "issueId": 127,
-  "issueUrl": "https://github.com/code-423n4/2024-11-nibiru-validation/issues/127"
+  "issueUrl": "https://github.com/code-423n4/2024-11-nibiru-validation/issues/127",
+  "validatedIssueId": 23,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-11-nibiru-findings/issues/23"
 }
