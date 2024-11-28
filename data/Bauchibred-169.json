@@ -4,5 +4,7 @@
   "risk": "3",
   "title": "Nibiru's bank coin to EVM balance tracking logic is completely broken for rebasing tokens and would lead to leakage/loss of funds when converting",
   "issueId": 169,
-  "issueUrl": "https://github.com/code-423n4/2024-11-nibiru-validation/issues/169"
+  "issueUrl": "https://github.com/code-423n4/2024-11-nibiru-validation/issues/169",
+  "validatedIssueId": 14,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-11-nibiru-findings/issues/14"
 }
