@@ -1,0 +1,21 @@
+issue,title,primary finding,validator comment,status,root cause (URL),size,robotLabel
+validation-85,The protocol is not compatible with tokens that don't return any values,validation-13,,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/84054a4f00fdfefaa8e5849c53eb66851a762319/x/evm/keeper/erc20.go#L91,32,:robot:_29_group
+validation-62,Hardcoded gas limits may lead to failed execution when opcode costs change,,speculation on future code,Unsatisfactory,,35,:robot:_primary
+validation-27,Incorrect block height validation in `BlockNumber()`,,QA,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/8ed91a036f664b421182e183f19f6cef1a4e28ea/eth/rpc/backend/blocks.go#L50-L52,37,:robot:_primary
+validation-67,fullRefundLeftoverGas is always set to false as it's not checked if the message is the inner one,,,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/main/x/evm/keeper/msg_server.go#L255,40,:robot:_primary
+validation-53,wrong implement of AddPrecompiles,,,Unsatisfactory,,44,:robot:_primary
+validation-82,Coinbase fees are not transferred to the coinbase address deviating from the standard execution client spec,,QA/invalid,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/main/x/evm/keeper/msg_server.go#L249,52,:robot:_primary
+validation-78,evmante_increment_sender_seq does not check if the operation is the contract creation,,,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/main/app/evmante/evmante_increment_sender_seq.go#L70,52,:robot:_primary
+validation-77,Missing chainId validation of the message,,,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/main/app/evmante/evmante_sigverify.go#L33,54,:robot:_primary
+validation-64,bankDenom is set to erc20 address converted to string instead of the actual denom,,QA,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/main/x/evm/keeper/funtoken_from_erc20.go#L122,55,:robot:_primary
+validation-80,MaxPriorityFeePerGas and MaxFeePerGas are specified for a user which is not correct,,QA,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/main/eth/rpc/backend/call_tx.go#L104,57,:robot:_primary
+validation-26,Overflow risk due to improper block number casting in `GetTransactionCount()`,,,Unsatisfactory,,57,:robot:_primary
+validation-66,Nonce handling behavior is different from the one specified in the EVM,validation-78,,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/main/app/evmante/evmante_increment_sender_seq.go#L70,61,:robot:_primary
+validation-45,Premature loop termination in pending tx nonce could cause incorrect nonce values to be returned to users,,,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/8ed91a036f664b421182e183f19f6cef1a4e28ea/eth/rpc/backend/utils.go#L91,61,:robot:_primary
+validation-84,Conversion of tokens will not work correctly as there is no way to ensure that the token was born on EVM,,private methods,Unsatisfactory,,62,:robot:_02_group
+validation-79,effectiveGasPriceDec does not depend on the user and uses hardcoded parameter leading to a potential tx revert,,,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/main/app/evmante/evmante_mempool_fees.go#L68,69,:robot:_primary
+validation-81,Only hardcoded base fee is deducted from the user's account which is not correct,,QA,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/main/app/evmante/evmante_gas_consume.go#L110,78,:robot:_36_group
+validation-63,Tokens that use bytes32 instead of string for ERC20 symbol() would not be compatible with the system,validation-165,QA,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/8ed91a036f664b421182e183f19f6cef1a4e28ea/x/evm/keeper/funtoken_from_erc20.go#L26-L52,86,:robot:_25_group
+validation-42,`bankBalance` precompile unintentionally skips error validation for parsed arguments,,insufficient proof,Unsatisfactory,,87,:robot:_46_group
+validation-68,Refund logic is not correct when applying EVM message,validation-23,,Satisfactory,https://github.com/code-423n4/2024-11-nibiru/blob/84054a4f00fdfefaa8e5849c53eb66851a762319/app/evmante/evmante_gas_consume.go#L100-L105,92,:robot:_12_group
+validation-83,Conversion from coin to EVM born ERC20 logic is flawed,,working as intended,Unsatisfactory,,97,:robot:_02_group
