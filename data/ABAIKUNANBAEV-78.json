@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "evmante_increment_sender_seq does not check if the operation is the contract creation",
   "issueId": 78,
-  "issueUrl": "https://github.com/code-423n4/2024-11-nibiru-validation/issues/78"
+  "issueUrl": "https://github.com/code-423n4/2024-11-nibiru-validation/issues/78",
+  "validatedIssueId": 76,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-11-nibiru-findings/issues/76"
 }
