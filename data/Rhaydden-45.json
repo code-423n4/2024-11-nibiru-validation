@@ -4,5 +4,7 @@
   "risk": "2",
   "title": "Premature loop termination in pending tx nonce could cause incorrect nonce values to be returned to users",
   "issueId": 45,
-  "issueUrl": "https://github.com/code-423n4/2024-11-nibiru-validation/issues/45"
+  "issueUrl": "https://github.com/code-423n4/2024-11-nibiru-validation/issues/45",
+  "validatedIssueId": 80,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-11-nibiru-findings/issues/80"
 }
