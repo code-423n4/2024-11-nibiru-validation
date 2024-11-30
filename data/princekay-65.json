@@ -4,5 +4,7 @@
   "risk": "Q",
   "title": "QA Report",
   "issueId": 65,
-  "issueUrl": "https://github.com/code-423n4/2024-11-nibiru-validation/issues/65"
+  "issueUrl": "https://github.com/code-423n4/2024-11-nibiru-validation/issues/65",
+  "validatedIssueId": 70,
+  "validatedIssueUrl": "https://github.com/code-423n4/2024-11-nibiru-findings/issues/70"
 }
